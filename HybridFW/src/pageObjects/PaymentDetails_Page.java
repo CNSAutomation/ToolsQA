@@ -14,10 +14,12 @@ public class PaymentDetails_Page extends BaseClass {
    	     super(driver);
    	    }
 	
-	 public static WebElement txt_Email(){
+	 public static WebElement txt_Email() throws Exception{
     	 element = null;
        	try{
        		element= driver.findElement(By.id("wpsc_checkout_form_9"));
+       		Thread.sleep(2000);
+       	//element= driver.findElement(By.xpath(".//input[@title='billingemail' and @type = 'text' and @id = 'wpsc_checkout_form_9']"));
        		Log.info("Email text box on Payment Details page is found.");
        	}catch (Exception e){
        		Log.error("Email text box on Payment Details page is not found");
@@ -29,7 +31,7 @@ public class PaymentDetails_Page extends BaseClass {
 	 public static WebElement txt_FirstName(){
     	 element = null;
        	try{
-       		element= driver.findElement(By.id("wpsc_checkout_form_2"));
+       		element= driver.findElement(By.xpath("wpsc_checkout_form_2"));
        		Log.info("First Name text box on Payment Details page is found.");
        	}catch (Exception e){
        		Log.error("First Name text box on Payment Details page is not found");

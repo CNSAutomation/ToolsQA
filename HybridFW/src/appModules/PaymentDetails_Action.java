@@ -23,15 +23,15 @@ public class PaymentDetails_Action {
         	// Please see the Constant class in the Utility Package
         	// For Use of Constant Variables, please see http://www.toolsqa.com/constant-variables/
 			String sEmail = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Email);
-			
+			Thread.sleep(2000);
 			// Clearing the pre-populated details on this field
 			PaymentDetails_Page.txt_Email().clear();
-        	
+			Thread.sleep(2000);
 			// Here we are sending the Email string to the Email Textbox on the Payment Detail Page
         	// This is call Page Object Model (POM)
         	// For use of POM, please see http://www.toolsqa.com/page-object-model/
 			PaymentDetails_Page.txt_Email().sendKeys(sEmail);
-			
+			Thread.sleep(2000);
 			// Printing the logs for what we have just performed
 			Log.info(sEmail +" is entered as First Name on the Payment detail page");
 			

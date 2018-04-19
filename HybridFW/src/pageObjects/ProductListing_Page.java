@@ -131,7 +131,7 @@ public class ProductListing_Page extends BaseClass {
 		 public static WebElement btn_GoToCart(){
 	   	 element = null;
 	      	try{
-	      		element= driver.findElement(By.xpath(".//*[@id='fancy_notification_content']/a[1]"));
+	      		element= driver.findElement(By.xpath(".//*[@id='header_cart']/a[@class='cart_icon']"));
 	      		Log.info("Go to Cart button is found on the Cart Pop Up window");
 	      	}catch (Exception e){
 	      		Log.info("Go to Cart button is not found on the Cart Pop Up window");
