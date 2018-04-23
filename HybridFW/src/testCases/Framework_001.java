@@ -1,12 +1,12 @@
 package testCases;
 
+
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import pageObjects.BaseClass;
 import utility.Constant;
 import utility.ExcelUtils;

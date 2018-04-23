@@ -4,29 +4,60 @@
     <line>
       <![CDATA[SignIn Action is successfully perfomred]]>
     </line>
+    <line>
+      <![CDATA[Verification Passed for Product Name on Check Out page.]]>
+    </line>
+    <line>
+      <![CDATA[Verification Passed for Product Price on Check Out page.]]>
+    </line>
   </reporter-output>
-  <suite started-at="2018-04-18T18:07:19Z" name="Default suite" finished-at="2018-04-18T18:07:59Z" duration-ms="39646">
+  <suite started-at="2018-04-19T18:33:32Z" name="Default suite" finished-at="2018-04-19T18:35:32Z" duration-ms="119479">
     <groups>
     </groups>
-    <test started-at="2018-04-18T18:07:19Z" name="Default test" finished-at="2018-04-18T18:07:59Z" duration-ms="39646">
-      <class name="testCases.Framework_002">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.Framework_002@6f45df59]" started-at="2018-04-18T18:07:19Z" name="beforeMethod" finished-at="2018-04-18T18:07:30Z" duration-ms="10592" status="PASS">
+    <test started-at="2018-04-19T18:33:32Z" name="Default test" finished-at="2018-04-19T18:35:32Z" duration-ms="119479">
+      <class name="testCases.Framework_001">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.Framework_001@31fa1761]" started-at="2018-04-19T18:33:32Z" name="beforeMethod" finished-at="2018-04-19T18:33:41Z" duration-ms="8551" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="f()[pri:0, instance:testCases.Framework_002@6f45df59]" started-at="2018-04-18T18:07:30Z" name="f" finished-at="2018-04-18T18:07:59Z" duration-ms="28913" status="FAIL">
-          <exception class="java.io.FileNotFoundException">
+        <test-method signature="main()[pri:0, instance:testCases.Framework_001@31fa1761]" started-at="2018-04-19T18:33:41Z" name="main" finished-at="2018-04-19T18:35:32Z" duration-ms="110804" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[E:\eclipse-oxygen-workspace\ToolsQA\HybridFW\src\testData\TestData.xlsx (The process cannot access the file because it is being used by another process)]]>
+              <![CDATA[Unable to locate element: wpsc_checkout_form_2
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:42:22.379Z'
+System info: host: 'SAM-DESKTOP', ip: '169.254.30.183', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 9804, moz:profile: C:\Users\Sam\AppData\Local\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: a11cb398-a03a-4dc8-bbc5-e64aa3587960
+*** Element info: {Using=xpath, value=wpsc_checkout_form_2}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.io.FileNotFoundException: E:\eclipse-oxygen-workspace\ToolsQA\HybridFW\src\testData\TestData.xlsx (The process cannot access the file because it is being used by another process)
-at java.base/java.io.FileOutputStream.open0(Native Method)
-at java.base/java.io.FileOutputStream.open(Unknown Source)
-at java.base/java.io.FileOutputStream.<init>(Unknown Source)
-at java.base/java.io.FileOutputStream.<init>(Unknown Source)
-at utility.ExcelUtils.setCellData(ExcelUtils.java:52)
-at testCases.Framework_002.f(Framework_002.java:52)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: wpsc_checkout_form_2
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:42:22.379Z'
+System info: host: 'SAM-DESKTOP', ip: '169.254.30.183', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 9804, moz:profile: C:\Users\Sam\AppData\Local\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: a11cb398-a03a-4dc8-bbc5-e64aa3587960
+*** Element info: {Using=xpath, value=wpsc_checkout_form_2}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+at pageObjects.PaymentDetails_Page.txt_FirstName(PaymentDetails_Page.java:34)
+at appModules.PaymentDetails_Action.execute(PaymentDetails_Action.java:40)
+at testCases.Framework_001.main(Framework_001.java:102)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -54,18 +85,24 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.io.FileNotFoundException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
             <line>
               <![CDATA[SignIn Action is successfully perfomred]]>
             </line>
+            <line>
+              <![CDATA[Verification Passed for Product Name on Check Out page.]]>
+            </line>
+            <line>
+              <![CDATA[Verification Passed for Product Price on Check Out page.]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.Framework_002@6f45df59]" started-at="2018-04-18T18:07:59Z" name="afterMethod" finished-at="2018-04-18T18:07:59Z" duration-ms="109" status="PASS">
+        </test-method> <!-- main -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.Framework_001@31fa1761]" started-at="2018-04-19T18:35:32Z" name="afterMethod" finished-at="2018-04-19T18:35:32Z" duration-ms="94" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- testCases.Framework_002 -->
+      </class> <!-- testCases.Framework_001 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
